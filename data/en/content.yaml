@@ -122,26 +122,26 @@ Projects:
     Description: A traditional bank built from scratch to communicate directly with the Brazilian Central Bank. The purpose is to allow customers to communicate with the resource transfer systems such as SPB (Brazilian Payment System) and SPI (Instant Payment System)
     Badges: ['Python', 'FastAPI', 'Pydantic', 'DDD', 'Clean Architecture', 'GCP', 'Git']
   - Project: Payment API - Bank as a Service
-    Description: Rest API built as microservices that allow customers to use Pix (Brazilian instant payment system), TED (Brazilian legacy system for electronic resource transfering), payment slips, cell phone rechages, card issuance and payment authorization, as well as integration with partner banks to create banking accounts. With this product customers can create banking solutions or even open their own bank
+    Description: Rest API built as microservices that allow customers to use Pix (Brazilian instant payment system), TED (Brazilian legacy system for electronic resource transfering), payment slips, cell phone recharges, card issuance and payment authorization, as well as integration with partner banks to create banking accounts. With this product customers can create banking solutions or even open their own bank
     Badges: ['Python', 'WebApp2', 'GCP', 'Git']
   - Project: Backoffice - Bank as a Service
-    Description: Web application, multi Tenant, for banking management, build in modules such as treasury, regulatory affairs, customer management, and others
+    Description: Web application, multi Tenant, for banking management, distributed in modules such as treasury, regulatory affairs, customer management, and others
     Badges: ['Python', 'Javascript', 'WebApp2', 'Vue.JS', 'GCP', 'Git']
   - Project: PyUDI
-    Description: Open Source library for serialization, parsing and validation of UDI's (Unique Device Identification) For medical use in compliance with FDA (USA) and EMA, implementing major agencies such as GS1, HIBCC and ICCBBA. The library generates instances with Fabric Design
+    Description: Open Source library for serialization, parsing and validation of UDI's (Unique Device Identification) For medical use in compliance with FDA (USA) and EMA, implementing major agencies standards such as GS1, HIBCC and ICCBBA. The library generates instances with Fabric Design
     Badges: ['Python']
   - Project: PySSRS
-    Description: Open Source library for integration with Microsoft SQL Server Reporting Services. It's usefull for SQL Server until version 2008, of which Microsoft only provided a SOAP protocol for integration.
+    Description: Open source Python library for Microsoft SQL Server Reporting Services integration. It's usefull for SQL Server until version 2008, of which Microsoft only provided a SOAP protocol for integration.
     Badges: ['Python', 'SOAP']
   - Project: Modular Integration System
-    Description: System capable of mapping the ERP database (Thanks to Django's resources) and generating customizable reports, automating services, managing action notifications, sending automatic emails and also has integration with Microsoft Teams, Microsoft Flow and has all access managed via Active Directory (LDAP). This system is being used by several sectors of a company to extend ERP functionalities or supply functionalities that do not exist in it. Examples of uses are the generation of UDI labels, shipment of material using serialization, automatic dispatch of invoices to customers, remote thermal label printing, among other resources. The system is internationalized and can generate reports for Excel, CSV, PDF or email without the need for extra codes, in addition to having GUI navigation through models using Primary/Foreign Keys
+    Description: Auxiliary ERP System capable of mapping ERP databases and generate customizable reports, automate processes, manage action notifications and send automatic emails, integrated with Active Directory (LDAP) for access/roles managament. This system is being used by several sectors of a company to extend ERP functionalities or supply functionalities that do not exist in it. Examples of usage are the generation of UDI labels, shipment of material using serialization, automatic dispatch of invoices to customers, remote thermal label printing, among other resources and features.
     Badges: ['Python', 'Django', 'DRF', 'Javascript', 'Vue.JS', 'Vuetify', 'Nginx', 'Docker', 'RabbitMQ', 'Celery', 'gUnicorn', 'SQL Server', 'Git']
   - Project: Thermal Printing API
-    Description: It is a Rest API service for Windows and Linux especially compatible with Microsoft's IIS service that receives ZPL and EPL commands and sends them to a thermal printer. Despite being something trivial, there was no solution available, making it quite useful in the industrial environment.
+    Description: A Rest API service for Windows and Linux especially compatible with Microsoft's IIS service that receives ZPL and EPL commands and sends them to a thermal printer. Despite being something trivial, there was no solution available, making it quite useful in the industrial environment.
     Badges: ['C#', '.NET Core', 'Asp.NET', 'IIS', 'Git']
   - Project: Warehouse Management
-    Description: Desktop application for OSX, Windows and Linux integrated with ERP. It was developed to provide reports, list and make adjustments to the electronic inventory of consumables through a Rest API
+    Description: Desktop application for OSX, Windows and Linux which extends ERP funtionalitites. It was developed to provide reports, list and process adjustments of the electronic inventory of consumables through a Rest API
     Badges: ['Javascript', 'Typescript', 'SQL Server', 'Electron', 'Vue.JS', 'Vuetify', 'Git']
   - Project: Custom Report System
-    Description: Desktop application developed in a modular way to serve several areas of the company and allowed users to create their own reports from the ERP database. It had its own permissions system with dynamic menus and own database. It also integrate remote thermal printers for industry automatition.
+    Description: Desktop application distributed in modules to serve several areas of the company that allowed users to create their own reports from the ERP database. It had it`s own permissions system with dynamic menus and had several commercial and industry automatitions built on top of the platform.
     Badges: ['Delphi', 'Firebird', 'FastReport', 'Git']
