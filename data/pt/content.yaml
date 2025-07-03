@@ -8,70 +8,82 @@ BasicInfo:
     - Icon: fa fa-envelope
       Info: fabricio.reinert@live.com
     - Icon: fa fa-brands fa-linkedin
-      Info: <a class="contact__link" href="https://www.linkedin.com/in/fabricio-reinert-669408173/" target="_blank">Linkedin Profile</a>
+      Info: <a class="contact__link" href="https://www.linkedin.com/in/fabricio-reinert-669408173/" target="_blank">LinkedIn Profile</a>
     - Icon: fa fa-brands fa-github
-      Info: <a class="contact__link" href="https://github.com/FRReinert" target="_blank">Github Profile</a>
+      Info: <a class="contact__link" href="https://github.com/FRReinert" target="_blank">GitHub Profile</a>
     - Icon: fa fa-map-marker-alt
       Info: Timbó, Santa Catarina, Brasil
 
-Profile: Gestão de serviços de tecnologia e engenharia de softwares Corporativos e B2B
+Profile: Gestão de serviços de tecnologia e engenharia de softwares corporativos e B2B
 
 Experience:
+  - Employer: Corpay/Zapay/Sem Parar/De Olho no Carro
+    Place: Timbó, BR
+    Positions:
+      - Title: Engenheiro de Software
+        Date: 2023 - Presente
+        Details:
+          - Desenvolvimento de core bancário para pagamentos e serviços financeiros
+          - Desenvolvimento de sistema de monitoramento de frotas
+          - Desenvolvimento de sistemas de gestão de assinaturas
+        Badges: ['Python', 'FastAPI', 'RabbitMQ', 'Celery', 'K8s', 'AWS']
+  - Employer: Adaga
+    Place: Timbó, BR
+    Positions:
+      - Title: Engenheiro de Software
+        Date: 2023
+        Details:
+          - Desenvolvimento de sistema para assinaturas de seguro e assistência
+        Badges: ['PHP', 'JavaScript', 'TypeScript', 'Vue.js', 'Slim', 'AWS']
   - Employer: Atar B2B
     Place: Timbó, BR
     Positions:
       - Title: Engenheiro de Software
-        Date: 2021 - Present
+        Date: 2021 - 2023
         Details:
-          - Desenvolvimento do Core bancário (Homologado pelo Bacen)
+          - Desenvolvimento do core bancário (homologado pelo Bacen)
           - Desenvolvimento do BaaS (Bank as a Service)
           - Desenvolvimento do CM (Cash Management)
           - Integração dos produtos com o SPI do Banco Central
           - Integração dos produtos com o SPB do Banco Central
           - Integração com instituições financeiras
           - Integração com instituições de pagamento
-          - Desenvolvimento dos módulos de gestão bancária (Backoffice)
-          - Desenvolvimento e sustentação de sistemas de transferência de recurso
+          - Desenvolvimento dos módulos de gestão bancária (backoffice)
+          - Desenvolvimento e sustentação de sistemas de transferência de recursos
           - Desenvolvimento e sustentação de sistemas contábeis
-        Badges: ['Python', 'Javascript', 'FastAPI', 'WebApp2', 'VueJS', 'AppEngine', 'Cloud Functions', 'Datastore', 'BigQuery', 'Memcache', 'Cloud Scheduler', 'Cloud Tasks', 'Docker', 'Agile', 'Scrum']
-  - Employer: Grupo Septodont
+        Badges: ['Python', 'JavaScript', 'FastAPI', 'WebApp2', 'Vue.js', 'AppEngine', 'Cloud Functions', 'Datastore', 'BigQuery', 'Memcache', 'Cloud Scheduler', 'Cloud Tasks', 'Docker', 'Agile', 'Scrum']
+  - Employer: Septodont
     Place: Pomerode, BR
     Positions:
-      - Title: Analista de Tecnologia e desenvolvedor
+      - Title: Desenvolvedor e Analista de Sistemas
         Date: 2014 - 2021
         Details:
-          - Implantação de sistemas
-          - Gerenciamento de servidores Linux e Windows em ambiente virtualizado On-Premise
-          - Gerenciamento de infraestrutura (Redes, backups, servidores…)
-          - Padronização de equipamentos User End (Laptops, smart phones, workstations…)
-          - Planos orçamentários para despesas e investimentos
-          - Documentação de sistemas e validação de rotinas
-          - Suporte ao ERP Protheus, Totvs
-          - Customização do ERP
-          - Extensões de funções do ERP por meio de APIs
-        Badges: ['Python', 'C#', 'ADVPL', 'Delphi', 'Javascript', 'Vue.JS', 'Asp.NET', 'Django', Electron, 'Azure', 'IIS', 'Docker', 'Nginx', 'SQL Server', 'Firebird', 'Veeam', 'Totvs', 'Dell', 'HP']
+          - Implantação de sistemas corporativos
+          - Desenvolvimento de sistemas internos
+          - Documentação e validação de rotinas
+          - Suporte e customização do Totvs Protheus
+          - Gerenciamento de infraestrutura
+          - Planos orçamentários de despesas e investimentos
+        Badges: ['Python', 'C#', 'ADVPL', 'Delphi', 'JavaScript', 'Vue.js', 'ASP.NET', 'Django', 'Electron', 'Azure', 'IIS', 'Docker', 'Nginx', 'SQL Server', 'Firebird', 'Veeam', 'Totvs']
   - Employer: Rede de Supermercados Top
     Place: Rio dos Cedros, BR
     Positions:
-      - Title: Gestor de serviços de TI
+      - Title: Gestor de Serviços de TI
         Date: 2013
         Details:
-          - Gestão da infraestrutura (Servidores, rede, backup, proxy…)
-          - Gestão de 5 lojas físicas e um centro de distribuição
-          - Suporte para PDV
-          - Intermediação para o ERP
-          - Compras e planejamento
-        Badges: ['Linux', 'Windows', 'Backup', 'Proxy', 'Management']
+          - Gestão da infraestrutura
+          - Análise, documentação e suporte de sistemas corporativos
+          - Compras e planejamento orçamentário
+        Badges: ['Gestão', 'Infraestrutura', 'ERP']
   - Employer: Sisplan Sistemas
     Place: Indaial, BR
     Positions:
-      - Title: Consultor de sistemas industriais
+      - Title: Consultor de Sistemas Industriais
         Date: 2011 - 2013
         Details:
-          - Consultoria para implantação de ERP
-          - Desenvolvimento e implantação de projetos
-          - Desenvolvimento de relatórios
-          - Suporte a clientes
+          - Implantação de ERP
+          - Desenvolvimento e implantação de projetos especiais
+          - Desenvolvimento de relatórios de processo
         Badges: ['Delphi', 'Outsourcing']
 
 Education:
@@ -88,7 +100,8 @@ Skills:
   - Family: Programação
     Items:
       - Python
-      - Javascript
+      - JavaScript
+      - TypeScript
       - C#
       - Delphi
       - SQL
@@ -98,19 +111,19 @@ Skills:
       - Django
       - Flask
       - FastAPI
-      - Asp.NET
-      - Vue.JS
+      - ASP.NET
+      - Vue.js
   - Family: Ferramentas
     Items:
-      - Git
-      - Docker
-      - Microsoft Azure
-      - Google Cloud Platform
+      - Azure
+      - GCP
+      - AWS
+      - K8s
   - Family: Diversos
     Items:
       - Scrum
       - Agile
-
+      - Kanban
 
 Languages:
   - Name: Português
@@ -120,29 +133,26 @@ Languages:
 
 Projects:
   - Project: Core Bancário
-    Description: Projeto de PSTI para um banco tradicional feito do zero para se comunicar diretamente com o Banco Central do Brasil. A finalidade é permitir a comunicação nos sistemas de transferência de recursos como o SPB (STR`s) e o SPI (Pix)
+    Description: Projeto de PSTI para um banco tradicional feito do zero para se comunicar diretamente com o Banco Central do Brasil. A finalidade é permitir a comunicação nos sistemas de transferência de recursos como o SPB (STRs) e o SPI (Pix).
     Badges: ['Python', 'FastAPI', 'Pydantic', 'DDD', 'Clean Architecture', 'GCP', 'Git']
   - Project: API de Pagamentos BaaS
-    Description: API Rest segregada em micro serviços para pagamento de Pix, TED, boletos, recargas de celular, emissão de cartões e autorização de pagamentos, além de integração com bancos parceiros para criação de contas correntes e contas transacionais. Um produto que permite que seus clientes criem suas próprias soluções bancárias ou até mesmo abram seu próprio banco
+    Description: API Rest segregada em microsserviços para pagamento de Pix, TED, boletos, recargas de celular, emissão de cartões e autorização de pagamentos, além de integração com bancos parceiros para criação de contas correntes e contas transacionais. Um produto que permite que seus clientes criem suas próprias soluções bancárias ou até mesmo abram seu próprio banco.
     Badges: ['Python', 'WebApp2', 'GCP', 'Git']
   - Project: Backoffice Bancário
-    Description: Aplicação Web Multi Tenant para gestão bancária, segregada em módulos como tesouraria, regulatórios, gestão de clientes e outros
-    Badges: ['Python', 'Javascript', 'WebApp2', 'Vue.JS', 'GCP', 'Git']
+    Description: Aplicação web multi-tenant para gestão bancária, segregada em módulos como tesouraria, regulatórios, gestão de clientes e outros.
+    Badges: ['Python', 'JavaScript', 'WebApp2', 'Vue.js', 'GCP', 'Git']
   - Project: PyUDI
-    Description: Biblioteca Open Source para serialização, parsing, validação e consulta de UDI's (Unique Device Identification) Para uso médico em compliance com FDA (USA) e EMA, implementando as principais agências como GS1, HIBCC e ICCBBA. A biblioteca gera instâncias com Fabric Design e é agnóstica em relação ao projeto, podendo ser utilizado em scripts, frameworks, etc
+    Description: Biblioteca open source para serialização, parsing, validação e consulta de UDIs (Unique Device Identification) para uso médico em compliance com FDA (EUA) e EMA, implementando as principais agências como GS1, HIBCC e ICCBBA. A biblioteca gera instâncias com Fabric Design e é agnóstica em relação ao projeto, podendo ser utilizada em scripts, frameworks, etc.
     Badges: ['Python']
   - Project: PySSRS
-    Description: Biblioteca Python Open Source para integração com Microsoft SQL Server Reporting Services. Pode ser utilizado em scripts de automação ou em um projeto Django e Flask. Sua maior utilidade está nas versões SQL Server 2008 e inferiores, das quais a Microsoft apenas disponibilizava um protocolo SOAP para integração
+    Description: Biblioteca Python open source para integração com Microsoft SQL Server Reporting Services. Pode ser utilizada em scripts de automação ou em um projeto Django e Flask. Sua maior utilidade está nas versões SQL Server 2008 e inferiores, das quais a Microsoft apenas disponibilizava um protocolo SOAP para integração.
     Badges: ['Python', 'SOAP']
   - Project: Sistema Modular de Integração
-    Description: Sistema capaz de mapear o banco de dados do ERP, gerar relatórios customizáveis, automatizar serviços, gerenciar notificações de ações, enviar e-mails automáticos e ainda conta com uma integração com Microsoft Teams, Microsoft Flow e tem todos os acessos gerenciados via Active Directory.Este sistema está sendo utilizado por diversos setores de uma empresa para estender funcionalidades não presentes no ERP ou que existiam, porém, não atendiam a demanda e necessitavam de integração com o ERP. Exemplos de utilização são a geração de etiquetas UDI, expedição de material utilizando serialização, envio de cobranças para clientes de maneira automatizada, impressão de etiquetas térmicas em impressoras remotas, entre outros recursos. O sistema é internacionalizado e pode gerar relatórios para Excel, PDF ou para e-mail sem precisar de códigos extras, além de possuir navegação por modelos de dados utilizando Foreign Keys
-    Badges: ['Python', 'Django', 'DRF', 'Javascript', 'Vue.JS', 'Vuetify', 'Nginx', 'Docker', 'RabbitMQ', 'Celery', 'gUnicorn', 'SQL Server', 'Git']
+    Description: Sistema capaz de mapear o banco de dados do ERP, gerar relatórios customizáveis, automatizar serviços, gerenciar notificações de ações, enviar e-mails automáticos e ainda conta com uma integração com Microsoft Teams, Microsoft Flow e tem todos os acessos gerenciados via Active Directory. Este sistema está sendo utilizado por diversos setores de uma empresa para estender funcionalidades não presentes no ERP ou que existiam, porém, não atendiam à demanda e necessitavam de integração com o ERP. Exemplos de utilização são a geração de etiquetas UDI, expedição de material utilizando serialização, envio de cobranças para clientes de maneira automatizada, impressão de etiquetas térmicas em impressoras remotas, entre outros recursos. O sistema é internacionalizado e pode gerar relatórios para Excel, PDF ou para e-mail sem precisar de códigos extras, além de possuir navegação por modelos de dados utilizando foreign keys.
+    Badges: ['Python', 'Django', 'DRF', 'JavaScript', 'Vue.js', 'Vuetify', 'Nginx', 'Docker', 'RabbitMQ', 'Celery', 'gUnicorn', 'SQL Server', 'Git']
   - Project: API de Impressão Térmica
-    Description: Trata-se de um serviço de API Rest para Windows e Linux especialmente compatível com serviço IIS da Microsoft que recebe comandos ZPL e EPL e envia para uma impressora térmica. Apesar de ser algo trivial, não havia nenhuma solução disponível, tornando-a bastante útil no ambiente industrial
-    Badges: ['C#', '.NET Core', 'Asp.NET', 'IIS', 'Git']
+    Description: Trata-se de um serviço de API Rest para Windows e Linux especialmente compatível com serviço IIS da Microsoft que recebe comandos ZPL e EPL e envia para uma impressora térmica. Apesar de ser algo trivial, não havia nenhuma solução disponível, tornando-a bastante útil no ambiente industrial.
+    Badges: ['C#', '.NET Core', 'ASP.NET', 'IIS', 'Git']
   - Project: Sistema de Inventário de Estoque
-    Description: Uma aplicação Desktop com builds para OSX, Windows e Linux integrados ao ERP. Foi desenvolvido para inventariar e movimentar material de estoque por meio de uma API Rest, além de fornecer relatórios operacionais.
-    Badges: ['Javascript', 'Typescript', 'SQL Server', 'Electron', 'Vue.JS', 'Vuetify', 'Git']
-  - Project: Sistema de Relatórios Personalizados
-    Description: Uma aplicação Desktop com builds para OSX, Windows e Linux integrados ao ERP. Foi desenvolvido para inventariar e movimentar material de estoque por meio de uma API Rest, além de fornecer relatórios operacionais
-    Badges: ['Delphi', 'Firebird', 'FastReport', 'Git']
+    Description: Uma aplicação desktop com builds para OSX, Windows e Linux integrados ao ERP. Foi desenvolvida para inventariar e movimentar material de estoque por meio de uma API Rest, além de fornecer relatórios operacionais.
+    Badges: ['JavaScript', 'TypeScript', 'SQL Server', 'Electron', 'Vue.js', 'Vuetify', 'Git']
