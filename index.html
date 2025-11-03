@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Resume - Fabricio Roberto Reinert</title>
+
+  <!-- Adicionado: tipografia simples, estilo "científico anos 2000" -->
+  <style>
+    /* Fonte serif clássica usada em divulgação científica (anos 2000) */
+    body {
+      font-family: "Times New Roman", Times, Georgia, serif;
+      font-size: 14px;
+      line-height: 1.45;
+      color: #000;
+      background: #fff;
+      margin: 1.5rem;
+      max-width: 900px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: "Times New Roman", Times, Georgia, serif;
+      font-weight: normal;
+      color: #111;
+      margin-top: 1rem;
+      margin-bottom: 0.4rem;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+
+    h2 {
+      font-size: 18px;
+    }
+
+    h3 {
+      font-size: 16px;
+    }
+
+    p,
+    li {
+      font-size: 14px;
+      margin: 0.25rem 0;
+    }
+
+    ul {
+      margin-left: 1.1rem;
+    }
+
+    /* Aparência limpa, sem excesso de decoração */
+    a {
+      color: #000;
+      text-decoration: underline;
+    }
+
+    #lang-switcher {
+      margin: 0.5rem 0;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1 id="name">Fabricio Reinert</h1>
+    <p id="location">Timbó, Santa Catarina, Brasil</p>
+
+    <div id="lang-switcher">
+      <label for="lang">Idioma:</label>
+      <select id="lang">
+        <option value="pt">Português (PT)</option>
+        <option value="en">English (EN)</option>
+      </select>
+    </div>
+
+    <ul id="contacts">
+      <!-- contatos estáticos (substituídos pelo scripts/i18n.js ao carregar) -->
+      <li>Phone: <a href="https://wa.me/5547991524473" target="_blank">+55 (47) 9 9152 4473</a></li>
+      <li>Email: <a href="mailto:fabricio.reinert@live.com">fabricio.reinert@live.com</a></li>
+      <li id="linkedin"><a href="https://www.linkedin.com/in/fabricio-reinert-669408173/" target="_blank">LinkedIn</a>
+      </li>
+      <li id="github"><a href="https://github.com/FRReinert" target="_blank">GitHub</a></li>
+    </ul>
+  </header>
+
+  <section>
+    <h2 id="profile-title">Profile</h2>
+    <p id="profile">IT Services Management and Software Engineer for Corporate and B2B Applications</p>
+  </section>
+
+  <section>
+    <h2 id="experience-title">Experience</h2>
+    <div id="experience">
+    </div>
+  </section>
+
+  <section>
+    <h2 id="education-title">Education</h2>
+    <ul id="education">
+    </ul>
+  </section>
+
+  <section>
+    <h2 id="skills-title">Skills</h2>
+    <div id="skills">
+    </div>
+  </section>
+
+  <section>
+    <h2 id="projects-title">Projects (seleção)</h2>
+    <ul id="projects">
+    </ul>
+  </section>
+
+  <script src="scripts/i18n.js"></script>
+</body>
+
+</html>
