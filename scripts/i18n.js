@@ -1,34 +1,39 @@
-// ...novo arquivo...
 (function () {
   const DEFAULT_LANG = 'pt';
   const LANG_SELECT_ID = 'lang';
 
-  // Traduções embutidas (copiadas do YAML)
   const TRANSLATIONS = {
     pt: {
+      Titles: {
+        Profile: "Resumo",
+        Experience: "Experiência",
+        Education: "Formação",
+        Skills: "Habilidades",
+        Projects: "Projetos"
+      },
       BasicInfo: {
         FirstName: "Fabricio",
         LastName: "Reinert",
+        Role: "Engenheiro de Software — Backend, Pagamentos e Cloud",
         Contacts: [
           { Info: '<a href="https://wa.me/5547991524473" target="_blank">+55 (47) 9 9152 4473</a>' },
           { Info: '<a href="mailto:fabricio.reinert@live.com">fabricio.reinert@live.com</a>' },
           { Info: '<a href="https://www.linkedin.com/in/fabricio-reinert-669408173/" target="_blank">LinkedIn</a>' },
           { Info: '<a href="https://github.com/FRReinert" target="_blank">GitHub</a>' },
-          { Info: "Timbó, Santa Catarina, Brasil" }
         ]
       },
-      Profile: "Gestão de serviços de tecnologia e engenharia de softwares corporativos e B2B",
+      Profile: "Engenheiro de software com foco em back-end, integração bancária e serviços em nuvem. Experiência em desenvolvimento de core bancário, APIs de pagamentos e sistemas resilientes escaláveis. Habilidades em liderar entrega técnica, integrar com instituições financeiras e melhorar desempenho/observabilidade.",
       Experience: [
         {
-          Employer: "Corpay/Zapay/Sem Parar/De Olho no Carro",
+          Employer: "Corpay",
           Place: "Timbó, BR",
           Positions: [
             {
               Title: "Engenheiro de Software",
               Date: "2023 - Presente",
               Details: [
-                "Desenvolvimento de core bancário para pagamentos e serviços financeiros",
-                "Desenvolvimento de sistema de monitoramento de frotas",
+                "Integrações com instituições públicas e privadas",
+                "Desenvolvimento de sistemas de monitoramento de frotas",
                 "Desenvolvimento de sistemas de gestão de assinaturas"
               ],
               Badges: ["Python", "FastAPI", "RabbitMQ", "Celery", "K8s", "AWS"]
@@ -136,28 +141,35 @@
       ]
     },
     en: {
+      Titles: {
+        Profile: "Summary",
+        Experience: "Experience",
+        Education: "Education",
+        Skills: "Skills",
+        Projects: "Projects"
+      },
       BasicInfo: {
         FirstName: "Fabricio",
         LastName: "Reinert",
+        Role: "Software Engineer — Backend, Payments and Cloud",
         Contacts: [
           { Info: '<a href="https://wa.me/5547991524473" target="_blank">+55 (47) 9 9152 4473</a>' },
           { Info: '<a href="mailto:fabricio.reinert@live.com">fabricio.reinert@live.com</a>' },
           { Info: '<a href="https://www.linkedin.com/in/fabricio-reinert-669408173/" target="_blank">LinkedIn</a>' },
           { Info: '<a href="https://github.com/FRReinert" target="_blank">GitHub</a>' },
-          { Info: "Timbó, Santa Catarina, Brasil" }
         ]
       },
-      Profile: "IT Services Management and Software Engineering for corporate and B2B applications",
+      Profile: "Software engineer focused on backend systems, banking integrations and cloud services. Experienced building banking cores, payments APIs and resilient scalable services. Strong background in delivering technical solutions, integrating with financial institutions and improving performance/observability.",
       Experience: [
         {
-          Employer: "Corpay/Zapay/Sem Parar/De Olho no Carro",
+          Employer: "Corpay",
           Place: "Timbó, BR",
           Positions: [
             {
               Title: "Software Engineer",
               Date: "2023 - Present",
               Details: [
-                "Development of banking core for payments and financial services",
+                "Integrations with public and private institutions",
                 "Development of fleet monitoring system",
                 "Development of subscription management systems"
               ],
@@ -274,6 +286,9 @@
   function renderBasicInfo(b) {
     if (!b) return;
     qs('name').textContent = `${b.FirstName || ''} ${b.LastName || ''}`.trim();
+    const roleEl = qs('role');
+    if (roleEl) roleEl.textContent = b.Role || '';
+
     const contactsContainer = qs('contacts');
     if (contactsContainer && b.Contacts) {
       contactsContainer.innerHTML = '';
@@ -355,6 +370,21 @@
     });
   }
 
+  function renderTitles(t) {
+    if (!t) return;
+    const map = [
+      ['profile-title', t.Profile],
+      ['experience-title', t.Experience],
+      ['education-title', t.Education],
+      ['skills-title', t.Skills],
+      ['projects-title', t.Projects]
+    ];
+    map.forEach(([id, text]) => {
+      const el = qs(id);
+      if (el && text) el.textContent = text;
+    });
+  }
+
   function applyContent(doc) {
     if (!doc) return;
     renderBasicInfo(doc.BasicInfo);
@@ -363,6 +393,7 @@
     renderEducation(doc.Education);
     renderSkills(doc.Skills);
     renderProjects(doc.Projects);
+    if (doc.Titles) renderTitles(doc.Titles);
   }
 
   function changeLang(lang) {
