@@ -396,12 +396,54 @@
     if (doc.Titles) renderTitles(doc.Titles);
   }
 
+  function updateSeo(lang, doc) {
+    if (!doc) return;
+    // Atualiza lang 
+    document.documentElement.lang = (lang === 'en') ? 'en' : 'pt-BR';
+
+    // Title
+    const name = (doc.BasicInfo && (doc.BasicInfo.FirstName + ' ' + doc.BasicInfo.LastName)) || 'Currículo';
+    document.title = `${name} - ${doc.BasicInfo && doc.BasicInfo.Role ? doc.BasicInfo.Role : ''}`.trim();
+
+    // Meta 
+    let desc = (doc.Profile && doc.Profile) || '';
+    let md = document.querySelector('meta[name="description"]');
+    if (!md) {
+      md = document.createElement('meta');
+      md.setAttribute('name', 'description');
+      document.head.appendChild(md);
+    }
+    md.setAttribute('content', desc);
+
+    // JSON-LD
+    const ld = document.getElementById('ld-json') || (function () {
+      const s = document.createElement('script'); s.type = 'application/ld+json'; s.id = 'ld-json'; document.head.appendChild(s); return s;
+    })();
+
+    const sameAs = [];
+    (doc.BasicInfo && doc.BasicInfo.Contacts || []).forEach(c => {
+      const m = (c.Info || '').match(/href=["']([^"']+)["']/);
+      if (m && m[1]) sameAs.push(m[1]);
+    });
+
+    const json = {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": name,
+      "jobTitle": doc.BasicInfo && doc.BasicInfo.Role,
+      "description": doc.Profile,
+      "sameAs": sameAs
+    };
+    ld.textContent = JSON.stringify(json, null, 2);
+  }
+
   function changeLang(lang) {
     const doc = TRANSLATIONS[lang] || TRANSLATIONS[DEFAULT_LANG];
     applyContent(doc);
     const sel = qs(LANG_SELECT_ID);
     if (sel) sel.value = lang;
     saveLang(lang);
+    updateSeo(lang, doc);
   }
 
   document.addEventListener('DOMContentLoaded', function () {
